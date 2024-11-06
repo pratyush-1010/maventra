@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .card_theme{
     box-shadow: 10px 10px 5px 0px rgba(214,214,214,1);
     border-radius: 10px;
     border: 1px solid rgba(214,214,214,1);
 }
 
+.gra_head{
+    background: linear-gradient(90deg,#fb00ff,#800887);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", serif;
+}
 
 .img_div{
     background-image: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
@@ -37,12 +45,29 @@
 .card_para{
     font-size: 18px;
     letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
 }
 
 .linkk{
     color: orange;
     font-weight: 500;
 }
+
+.numbers{
+    background: linear-gradient(45deg, rgba(238,174,202,1) 50%, rgba(148,187,233,1) 90%);
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.time_div{
+    margin-top: -5%;
+}
+
+.time_row{
+    border-top: 2px solid lightgray;
+}
+
 
 
 .pyramid{
@@ -84,6 +109,41 @@
     font-weight: bold;
 }
 
+.large{
+    font-size: 20px;
+}
+
+.callout{
+    background: rgba(238,174,202,.7);
+    border-radius: 5px;
+}
+
+.pri_but{
+    background: linear-gradient(45deg, rgba(238,174,202,.7) 50%, rgba(148,187,233,.7) 90%);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.sec_but{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #fb00ff;
+    color: #fb00ff;
+    background-color: transparent;
+    outline: none;
+    border-radius: 5px;
+}
+
+.bordiv{
+    border-left: 2px solid #fb00ff;
+}
+
 @media only screen and (max-width: 768px) {
   
     .imgg{
@@ -93,6 +153,19 @@
         border-bottom-left-radius: 10px !important;
         border-bottom-right-radius: 10px !important;
     
+    }
+    .time_row{
+        border:none;
+    }
+    .time_div{
+        margin-top:0%;
+        margin: 10px 0px;
+    }
+
+    .bordiv,.time_div{
+        border: 2px solid #fb00ff;
+        padding: 10px !important;
+        border-radius: 5px;
     }
 }
 
